@@ -1,0 +1,20 @@
+title: Wolf Blog
+description: "A simple Jekyll blog for sharing stories and updates."
+baseurl: ""
+url: ""
+
+author:
+  name: "Wolf Team"
+
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+minima:
+  skin: classic
+  social_links:
+    - { platform: github,  user_url: "https://github.com/example" }
+    - { platform: twitter, user_url: "https://twitter.com/example" }
+
+permalink: /:categories/:year/:month/:day/:title/
