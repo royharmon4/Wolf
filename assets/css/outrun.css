@@ -1,0 +1,82 @@
+:root {
+  --outrun-bg: #090014;
+  --outrun-bg-alt: #140326;
+  --outrun-pink: #ff3cac;
+  --outrun-cyan: #29f8ff;
+  --outrun-purple: #7b2cff;
+  --outrun-text: #f7e8ff;
+}
+
+body {
+  color: var(--outrun-text);
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 60, 172, 0.22), transparent 35%),
+    radial-gradient(circle at 80% 15%, rgba(41, 248, 255, 0.2), transparent 35%),
+    linear-gradient(180deg, var(--outrun-bg-alt) 0%, var(--outrun-bg) 55%);
+  min-height: 100vh;
+}
+
+.site-header,
+.site-footer {
+  background: rgba(9, 0, 20, 0.72);
+  border: 0;
+  box-shadow: 0 0 24px rgba(123, 44, 255, 0.3);
+}
+
+.site-title,
+.page-link,
+.post-link,
+a {
+  color: var(--outrun-cyan) !important;
+}
+
+a:hover {
+  color: var(--outrun-pink) !important;
+  text-decoration: none;
+}
+
+.outrun-hero {
+  margin: 2rem 0 2.5rem;
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 60, 172, 0.55);
+  background: linear-gradient(135deg, rgba(123, 44, 255, 0.28), rgba(9, 0, 20, 0.8));
+  box-shadow: 0 0 24px rgba(255, 60, 172, 0.45), inset 0 0 16px rgba(41, 248, 255, 0.22);
+}
+
+.outrun-title {
+  margin: 0;
+  font-size: clamp(2rem, 7vw, 3.7rem);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #ffe7ff;
+  text-shadow: 0 0 12px rgba(255, 60, 172, 0.95), 0 0 25px rgba(123, 44, 255, 0.75);
+}
+
+.outrun-subtitle {
+  margin-top: 0.7rem;
+  font-size: 1.15rem;
+  color: #d8f9ff;
+}
+
+.outrun-grid {
+  margin-top: 1.5rem;
+  height: 120px;
+  border-top: 2px solid rgba(41, 248, 255, 0.65);
+  background-image:
+    linear-gradient(transparent 0%, rgba(41, 248, 255, 0.18) 100%),
+    repeating-linear-gradient(90deg, rgba(41, 248, 255, 0.28) 0, rgba(41, 248, 255, 0.28) 2px, transparent 2px, transparent 34px),
+    repeating-linear-gradient(0deg, rgba(255, 60, 172, 0.25) 0, rgba(255, 60, 172, 0.25) 2px, transparent 2px, transparent 22px);
+  transform: perspective(180px) rotateX(48deg);
+  transform-origin: top;
+  opacity: 0.9;
+}
+
+.post-list > li,
+.post {
+  background: rgba(20, 3, 38, 0.62);
+  border: 1px solid rgba(123, 44, 255, 0.4);
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+  box-shadow: 0 0 18px rgba(123, 44, 255, 0.24);
+}
